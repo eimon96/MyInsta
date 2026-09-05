@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MyInsta</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell" aria-labelledby="page-title">
+      <section class="gallery-card">
+        <header class="gallery-header">
+          <h1 id="page-title">Image Grid</h1>
+          <p id="image-count">Loading images…</p>
+        </header>
+
+        <div id="gallery" class="gallery-grid" aria-live="polite"></div>
+
+        <p id="empty-state" class="empty-state" hidden>
+          No images found. Add image files to the <code>images</code> folder, commit, and push.
+        </p>
+      </section>
+    </main>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
